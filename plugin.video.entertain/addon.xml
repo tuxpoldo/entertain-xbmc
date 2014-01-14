@@ -2,7 +2,7 @@
 <addon id="plugin.video.entertain"
 	name="Telekom Entertain"
 	version="0.0.1"
-	provider-name="Leo Moll (leo.moll@yeasoft.com)">
+	provider-name="Leo Moll">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 	</requires>
