@@ -20,7 +20,7 @@ import xbmc, xbmcplugin, xbmcgui, xbmcaddon
 
 # -- Constants ----------------------------------------------
 ADDON_ID = 'plugin.video.entertain'
-FANART = 'special://home/addons/' + ADDON_ID + '/fanart.jpg'
+FANART = xbmcaddon.Addon(id=ADDON_ID).getAddonInfo('path') + '/fanart.jpg'
 
 # -- Settings -----------------------------------------------
 settings = xbmcaddon.Addon(id=ADDON_ID)
@@ -45,7 +45,7 @@ def getThumbnailUrl(filename=False):
 def getResourceUrl(reskind, filename=False):
 	if (not filename):
 		filename = 'default.png'
-	retUrl = 'special://home/addons/' + ADDON_ID + '/resources/' + reskind + '/' + filename
+	retUrl = xbmcaddon.Addon(id=ADDON_ID).getAddonInfo('path') + '/resources/' + reskind + '/' + filename
 	return xbmc.translatePath(retUrl)
 
 
