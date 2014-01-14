@@ -1,5 +1,5 @@
-XBMC Plugin for Deutsche Telekom's Entertain
-============================================
+XBMC Deutsche Telekom's Entertain Plugin
+========================================
 
 About
 -----
