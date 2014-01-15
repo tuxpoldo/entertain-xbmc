@@ -1,3 +1,6 @@
+0.0.4
+- Added support for italian language
+
 0.0.3
 - Added more channel logos
 - Added support for posters as channel logos (Closes #5)
