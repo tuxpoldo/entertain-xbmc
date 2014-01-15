@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <strings>
 	<string id="30001">Bevorzugte Qualität</string>
+	<string id="30002">Senderlogo Format</string>
 	<string id="30010">Vollprogramm</string>
 	<string id="30011">Regionalprogramm</string>
 	<string id="30012">Kulturprogramm</string>

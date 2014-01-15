@@ -24,22 +24,27 @@ FANART = xbmcaddon.Addon(id=ADDON_ID).getAddonInfo('path') + '/fanart.jpg'
 
 # -- Settings -----------------------------------------------
 settings = xbmcaddon.Addon(id=ADDON_ID)
-quality_id = 1 + int(settings.getSetting("quality"))
+quality = 1 + int(settings.getSetting("quality"))
+channelimage = int(settings.getSetting("channelimage"))
 
 # -- I18n ---------------------------------------------------
 language = xbmcaddon.Addon(id=ADDON_ID).getLocalizedString
 
 # -- Functions ----------------------------------------------
-def getFanartUrl(filename=False):
-	return getResourceUrl('fanart', filename)
-
-
 def getIconUrl(filename=False):
 	return getResourceUrl('icons', filename)
 
 
 def getThumbnailUrl(filename=False):
 	return getResourceUrl('thumbnails', filename)
+
+
+def getPosterUrl(filename=False):
+	return getResourceUrl('poster', filename)
+
+
+def getFanartUrl(filename=False):
+	return getResourceUrl('fanart', filename)
 
 
 def getResourceUrl(reskind, filename=False):
@@ -49,31 +54,35 @@ def getResourceUrl(reskind, filename=False):
 	return xbmc.translatePath(retUrl)
 
 
-def addEntertainChannel(url,name,icon=False,thumbnail=False,fanart=False, plot='', genre=language(30010),year='2014',duration='90',hdurl=False):
+def addEntertainChannel(url,name,all=False,icon=False,thumbnail=False,poster=False,fanart=False, plot='', genre=language(30010),year='2014',duration='90',hdurl=False):
 	if (not hdurl):
-		addChannel(url,name,icon,thumbnail,fanart,plot,genre,year,duration)
+		addChannel(url,name,all,icon,thumbnail,poster,fanart,plot,genre,year,duration)
 	else:
-		if (quality_id & 1):
-			addChannel(url,name,icon,thumbnail,fanart,plot,genre,year,duration)
-		if (quality_id & 2):
-			addChannel(hdurl,name + " HD",icon,thumbnail,fanart,plot,genre,year,duration)
+		if (quality & 1):
+			addChannel(url,name,all,icon,thumbnail,poster,fanart,plot,genre,year,duration)
+		if (quality & 2):
+			addChannel(hdurl,name + " HD",all,icon,thumbnail,poster,fanart,plot,genre,year,duration)
 
 
-def addChannel(url,name,icon=False,thumbnail=False,fanart=False, plot='', genre=language(30010),year='2014',duration='90'):
-	iconUrl = getIconUrl(icon)
-	thumbnailUrl = getThumbnailUrl(thumbnail)
-	fanartUrl = getFanartUrl(fanart)
-	li = xbmcgui.ListItem(name, iconImage=iconUrl, thumbnailImage=thumbnailUrl)
+def addChannel(url,name,all=False,icon=False,thumbnail=False,poster=False,fanart=False, plot='', genre=language(30010),year='2014',duration='90'):
+	iconUrl = getIconUrl(icon if (icon) else all)
+	thumbnailUrl = getThumbnailUrl(thumbnail if (thumbnail) else all)
+	posterUrl = getPosterUrl(poster if (poster) else all)
+	fanartUrl = getFanartUrl(fanart if (fanart) else all)
+	logoUrl = thumbnailUrl if ( channelimage ) else posterUrl
+	li = xbmcgui.ListItem(name, iconImage=iconUrl, thumbnailImage=logoUrl)
 	li.setProperty('IsPlayable', 'true')
-	li.setProperty('Fanart_Image', getFanartUrl(fanart))
+	li.setProperty('Poster_Image', posterUrl)
+	li.setProperty('Fanart_Image', fanartUrl)
 	li.setInfo(type = 'Video', infoLabels = {
 		"Title": name,
 		"Plot": plot,
 		"Year": year,
 		"Genre": genre,
 		"Duration": duration,
-		"Art(fanart)": fanartUrl,
-		"Art(thumb)": thumbnail
+		"Art(thumb)": thumbnailUrl,
+		"Art(poster)": posterUrl,
+		"Art(fanart)": fanartUrl
 		 })
 	xbmcplugin.addDirectoryItem(int(sys.argv[1]), url, li, False)
 	
@@ -88,8 +97,8 @@ xbmcplugin.setPluginFanart(int(sys.argv[1]), FANART)
 xbmcplugin.setContent(int(sys.argv[1]), 'movies')
 
 # -- Vollprogramm
-addEntertainChannel ('rtp://@239.35.10.4:10000', 'Das Erste', year='1954', plot=language(30101), icon='das-erste.png', thumbnail='das-erste.png', fanart='das-erste.png', hdurl='rtp://@239.35.10.1:10000')
-addEntertainChannel ('rtp://@239.35.10.5:10000', 'ZDF', year='1963', plot=language(30102), icon='zdf.png', thumbnail='zdf.png', fanart='zdf.png', hdurl='rtp://@239.35.10.2:10000')
+addEntertainChannel ('rtp://@239.35.10.4:10000', 'Das Erste', year='1954', plot=language(30101), all='das-erste.png', hdurl='rtp://@239.35.10.1:10000')
+addEntertainChannel ('rtp://@239.35.10.5:10000', 'ZDF', year='1963', plot=language(30102), all='zdf.png', hdurl='rtp://@239.35.10.2:10000')
 
 # -- Dritte
 addEntertainChannel ('rtp://@239.35.10.13:10000', 'BR Nord', year='1949', genre=language(30011), plot=language(30103))
@@ -123,7 +132,7 @@ addEntertainChannel ('rtp://@239.35.10.44:10000', 'WDR Wuppertal', year='1956', 
 
 # -- Kultur
 addEntertainChannel ('rtp://@239.35.10.6:10000', '3sat', year='1984', genre=language(30012), plot=language(30111), hdurl='rtp://@239.35.10.47:10000')
-addEntertainChannel ('rtp://@239.35.10.20:10000', 'ARTE', year='1991', genre=language(30012), plot=language(30112), hdurl='rtp://@239.35.10.3:10000')
+addEntertainChannel ('rtp://@239.35.10.20:10000', 'ARTE', year='1991', genre=language(30012), plot=language(30112), all='arte.png', hdurl='rtp://@239.35.10.3:10000')
 addEntertainChannel ('rtp://@239.35.10.21:10000', 'Einsfestival', year='1997', genre=language(30012), plot=language(30113))
 addEntertainChannel ('rtp://@239.35.10.23:10000', 'zdf.kultur', year='2011', genre=language(30012), plot=language(30114), hdurl='rtp://@239.35.10.54:10000')
 
