@@ -1,4 +1,7 @@
 0.0.4
+- Added BR channel art
+- Reduced size by changing art format to jpg
+- Made all strings localizable
 - Added support for italian language
 
 0.0.3

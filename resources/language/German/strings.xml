@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <strings>
-	<string id="30001">Bevorzugte Qualität</string>
-	<string id="30002">Senderlogo Format</string>
-	<string id="30010">Vollprogramm</string>
-	<string id="30011">Regionalprogramm</string>
-	<string id="30012">Kulturprogramm</string>
-	<string id="30013">Spartenprogramm</string>
-	<string id="30014">Nachrichten</string>
+	<string id="30010">Bevorzugte Qualität</string>
+	<string id="30011">SD bevorzugen</string>
+	<string id="30012">HD bevorzugen</string>
+	<string id="30013">SD &amp; HD anzeigen</string>
+	<string id="30020">Senderlogo Format</string>
+	<string id="30021">Poster</string>
+	<string id="30022">Thumbnail</string>
+	<string id="30090">Vollprogramm</string>
+	<string id="30091">Regionalprogramm</string>
+	<string id="30092">Kulturprogramm</string>
+	<string id="30093">Spartenprogramm</string>
+	<string id="30094">Nachrichten</string>
 	<string id="30101">Das Erste ist das erste öffentlich-rechtliche nationale Fernsehprogramm Deutschlands. Das deutschlandweite Fernsehprogramm ist eine Gemeinschaftsproduktion aller angeschlossenen Rundfunkanstalten der ARD außer der Deutschen Welle. Der Sender startete nach zweijähriger Testphase offiziell am 25. Dezember 1952 als NWDR-Fernsehen und wurde zunächst unter der Federführung des damaligen NWDRs betrieben. Ab dem 1. November 1954 wurde der Sender schließlich als Gemeinschaftsprogramm der Landesrundfunkanstalten unter dem Namen Deutsches Fernsehen betrieben. Seit 1996 lautet die offizielle Kurzform „Das Erste“, der vollständige Name lautet weiterhin „Erstes Deutsches Fernsehen“. Umgangssprachlich wird der Sender auch Erstes Programm oder metonymisch ARD genannt.	</string>
 	<string id="30102">Das Zweite Deutsche Fernsehen (ZDF) ist eine der größten öffentlich-rechtlichen Sendeanstalten Europas mit Sitz in der rheinland-pfälzischen Landeshauptstadt Mainz. Gemeinsam mit den in der ARD zusammengeschlossenen Landesrundfunkanstalten und dem Deutschlandradio bildet das ZDF den öffentlich-rechtlichen Rundfunk in Deutschland. Das ZDF startete mit ca. 2200 fest angestellten Mitarbeitern und beschäftigt heute ca. 3600 Mitarbeiter.</string>
 	<string id="30103">Der Bayerische Rundfunk (BR) ist eine Anstalt des öffentlichen Rechts. Er sendet als Landesrundfunkanstalt für den Freistaat Bayern mit Sitz in München Hörfunk und Fernsehen. Der BR ist Mitglied der ARD.</string>

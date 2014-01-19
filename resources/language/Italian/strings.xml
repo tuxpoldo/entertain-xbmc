@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <strings>
-	<string id="30001">Qualità preferita</string>
-	<string id="30002">Immagine preferita</string>
-	<string id="30010">Programma completo</string>
-	<string id="30011">Programma regionale</string>
-	<string id="30012">Programma culturale</string>
-	<string id="30013">Programma speciale</string>
-	<string id="30014">Notizie ed attualità</string>
+	<string id="30010">Qualità preferita</string>
+	<string id="30011">Bassa risoluzione</string>
+	<string id="30012">Alta risoluzione</string>
+	<string id="30013">Tutte le risoluzioni</string>
+	<string id="30020">Logo del Canale</string>
+	<string id="30021">Poster</string>
+	<string id="30022">Thumbnail</string>
+	<string id="30090">Programma completo</string>
+	<string id="30091">Programma regionale</string>
+	<string id="30092">Programma culturale</string>
+	<string id="30093">Programma speciale</string>
+	<string id="30094">Notizie ed attualità</string>
 	<string id="30101">Das Erste (letteralmente "La Prima"), facente capo ad ARD, è la più importante rete televisiva pubblica tedesca. Questo canale televisivo manda in onda programmi di tutti i tipi, variando dal telegiornale ai documentari ai film.</string>
 	<string id="30102">ZDF, Zweites Deutsches Fernsehen ("Seconda Televisione Tedesca"), è una televisione pubblica tedesca con sede a Magonza, nel Land della Renania-Palatinato. Essa opera come un'agenzia indipendente non a scopo di lucro stabilita da un contratto unitario tra i vari stati che compongono la Germania (Länder). ZDF è finanziata dal canone e dalla pubblicità.</string>
 	<string id="30103">La Bayerischer Rundfunk (BR, in sigla) è l'emittente radiotelevisiva pubblica locale del Land tedesco della Baviera, ed è affiliata ad ARD. La sede principale è situata a Monaco di Baviera.</string>
