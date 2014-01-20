@@ -106,7 +106,7 @@ addEntertainChannel ('rtp://@239.35.10.7:10000', 'BR Süd', year='1949', genre=l
 addEntertainChannel ('rtp://@239.35.10.8:10000', 'hr-fernsehen', genre=language(30091), plot=language(30124), all='hr.jpg')
 addEntertainChannel ('rtp://@239.35.10.9:10000', 'MDR Sachsen', year='1992', genre=language(30091), plot=language(30104), all='mdr.jpg')
 addEntertainChannel ('rtp://@239.35.10.29:10000', 'MDR Sachsen-Anhalt', year='1992', genre=language(30091), plot=language(30104), all='mdr.jpg')
-addEntertainChannel ('rtp://@239.35.10.30:10000', 'MDR Thüringen', year='1992', genre=language(30091), plot=language(30104, all='mdr.jpg')
+addEntertainChannel ('rtp://@239.35.10.30:10000', 'MDR Thüringen', year='1992', genre=language(30091), plot=language(30104), all='mdr.jpg')
 addEntertainChannel ('rtp://@239.35.10.10:10000', 'NDR Niedersachsen', year='1954', genre=language(30091), plot=language(30105))
 addEntertainChannel ('rtp://@239.35.10.50:10000', 'NDR Niedersachsen HD', year='1954', genre=language(30091), plot=language(30105))
 addEntertainChannel ('rtp://@239.35.10.31:10000', 'NDR Hamburg', year='1954', genre=language(30091), plot=language(30105))
