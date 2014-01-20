@@ -17,7 +17,7 @@
 		<description lang="en">Access to all public TV channels available on Deutsche Telekom's triple play connections.</description>
 		<description lang="it">Accesso a tutti i canali IPTV pubblici disponibili su linie DSL/VDSL della Deutsche Telekom con contratto Entertain</description>
 		<platform>all</platform>
-		<language>en de it</language>
+		<language>de</language>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
 		<forum>http://forum.xbmc.org/showthread.php?tid=183456</forum>
 		<website></website>
