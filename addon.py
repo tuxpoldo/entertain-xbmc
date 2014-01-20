@@ -103,7 +103,7 @@ addEntertainChannel ('rtp://@239.35.10.5:10000', 'ZDF', year='1963', plot=langua
 # -- Dritte
 addEntertainChannel ('rtp://@239.35.10.13:10000', 'BR Nord', year='1949', genre=language(30091), plot=language(30103), all='BR.jpg')
 addEntertainChannel ('rtp://@239.35.10.7:10000', 'BR Süd', year='1949', genre=language(30091), plot=language(30103), all='BR.jpg', hdurl='rtp://@239.35.10.49:10000')
-addEntertainChannel ('rtp://@239.35.10.8:10000', 'hr-fernsehen', genre=language(30091), plot=language(30124))
+addEntertainChannel ('rtp://@239.35.10.8:10000', 'hr-fernsehen', genre=language(30091), plot=language(30124), all='hr.jpg')
 addEntertainChannel ('rtp://@239.35.10.9:10000', 'MDR Sachsen', year='1992', genre=language(30091), plot=language(30104))
 addEntertainChannel ('rtp://@239.35.10.29:10000', 'MDR Sachsen-Anhalt', year='1992', genre=language(30091), plot=language(30104))
 addEntertainChannel ('rtp://@239.35.10.30:10000', 'MDR Thüringen', year='1992', genre=language(30091), plot=language(30104))
