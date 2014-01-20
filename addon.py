@@ -131,7 +131,7 @@ addEntertainChannel ('rtp://@239.35.10.43:10000', 'WDR Siegen', year='1956', gen
 addEntertainChannel ('rtp://@239.35.10.44:10000', 'WDR Wuppertal', year='1956', genre=language(30091), plot=language(30110))
 
 # -- Kultur
-addEntertainChannel ('rtp://@239.35.10.6:10000', '3sat', year='1984', genre=language(30092), plot=language(30111), hdurl='rtp://@239.35.10.47:10000')
+addEntertainChannel ('rtp://@239.35.10.6:10000', '3sat', year='1984', genre=language(30092), plot=language(30111), all='3sat.jpg', hdurl='rtp://@239.35.10.47:10000')
 addEntertainChannel ('rtp://@239.35.10.20:10000', 'ARTE', year='1991', genre=language(30092), plot=language(30112), all='arte.jpg', hdurl='rtp://@239.35.10.3:10000')
 addEntertainChannel ('rtp://@239.35.10.21:10000', 'Einsfestival', year='1997', genre=language(30092), plot=language(30113))
 addEntertainChannel ('rtp://@239.35.10.23:10000', 'zdf.kultur', year='2011', genre=language(30092), plot=language(30114), hdurl='rtp://@239.35.10.54:10000')
