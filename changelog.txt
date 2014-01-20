@@ -1,3 +1,7 @@
+0.0.5
+- Fixed wrong language tag (Closes #6)
+- Added 3sat, HR and MDR channel art
+
 0.0.4
 - Added BR channel art
 - Reduced size by changing art format to jpg
