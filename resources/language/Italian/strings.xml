@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <strings>
+	<string id="30001">Impostazioni</string>
+	<string id="30002">Categorie</string>
 	<string id="30010">Qualità preferita</string>
 	<string id="30011">Bassa risoluzione</string>
 	<string id="30012">Alta risoluzione</string>
@@ -7,6 +9,16 @@
 	<string id="30020">Logo del Canale</string>
 	<string id="30021">Poster</string>
 	<string id="30022">Thumbnail</string>
+	<string id="30030">Selezione Network</string>
+	<string id="30031">Solo pubblici</string>
+	<string id="30032">Solo privati</string>
+	<string id="30033">Tutti</string>
+	<string id="30040">Menu canali gerarchico</string>
+	<string id="30080">Programmi completi</string>
+	<string id="30081">Programmi regionali</string>
+	<string id="30082">Programmi culturali</string>
+	<string id="30083">Programmi speciali</string>
+	<string id="30084">Notizie ed attualità</string>
 	<string id="30090">Programma completo</string>
 	<string id="30091">Programma regionale</string>
 	<string id="30092">Programma culturale</string>

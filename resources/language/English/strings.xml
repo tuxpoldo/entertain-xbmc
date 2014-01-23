@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <strings>
+	<string id="30001">General</string>
+	<string id="30002">Channel Genres</string>
 	<string id="30010">Preferred Quality</string>
 	<string id="30011">Prefer SD</string>
 	<string id="30012">Prefer HD</string>
@@ -7,6 +9,16 @@
 	<string id="30020">Preferred Channel Image</string>
 	<string id="30021">Poster</string>
 	<string id="30022">Thumbnail</string>
+	<string id="30030">Network Categories</string>
+	<string id="30031">Only Public Networks</string>
+	<string id="30032">Only Commercial Networks</string>
+	<string id="30033">All</string>
+	<string id="30040">Hierarchical Menu</string>
+	<string id="30080">General Channels</string>
+	<string id="30081">Regional Channels</string>
+	<string id="30082">Cultural Channels</string>
+	<string id="30083">Special Interest Channels</string>
+	<string id="30084">News Channels</string>
 	<string id="30090">General Channel</string>
 	<string id="30091">Regional Channel</string>
 	<string id="30092">Cultural Channel</string>

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <strings>
+	<string id="30001">Allgemein</string>
+	<string id="30002">Sendersparten</string>
 	<string id="30010">Bevorzugte Qualität</string>
 	<string id="30011">SD bevorzugen</string>
 	<string id="30012">HD bevorzugen</string>
@@ -7,6 +9,16 @@
 	<string id="30020">Senderlogo Format</string>
 	<string id="30021">Poster</string>
 	<string id="30022">Thumbnail</string>
+	<string id="30030">Angezeigte Senderkategorie</string>
+	<string id="30031">Nur öffentlich rechtliche</string>
+	<string id="30032">Nur private</string>
+	<string id="30033">Alle</string>
+	<string id="30040">Hierarchische Sendermenü</string>
+	<string id="30080">Vollprogramme</string>
+	<string id="30081">Regionalprogramme</string>
+	<string id="30082">Kulturprogramme</string>
+	<string id="30083">Spartenprogramme</string>
+	<string id="30084">Nachrichtenprogramme</string>
 	<string id="30090">Vollprogramm</string>
 	<string id="30091">Regionalprogramm</string>
 	<string id="30092">Kulturprogramm</string>
