@@ -5,9 +5,11 @@ About
 -----
 
 The XBMC Entertain Plugin integrates live TV streaming via [Deutsche Telekom's
-Entertain] [1] IPTV service into XBMC. It allows to view all german public
-channels (Öffentlich-Rechtliche Sender) and some of the commercial channels
-(RTL Group) in XBMC.
+Entertain] [1] IPTV service into XBMC. his plugin is useful for occasional live
+TV viewing. If you require power features like time shift viewing or recording,
+you should consider installing a TV backend server like tvheadend, vdf or
+dvbviewer. It allows to view all german public channels (Öffentlich-Rechtliche
+Sender) and some of the commercial channels (RTL Group) in XBMC.
 
 License
 -------
